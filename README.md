@@ -1,4 +1,4 @@
 # Example USAGE
 
-from KAGraph import KAGraph
+from KAGraph import KAGraph \\
 a = KAGraph.Graph()
