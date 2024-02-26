@@ -15,20 +15,28 @@ pip install KAGraph
 Here's a quick example to show you how to create a graph, add edges, and use some of the available methods:
 
 ```python
-from KAGraph import Graph
+from KAGraph import KAGraph
 
 # Initialize the Graph
-graph = Graph()
+print("\nCreating graph...\n")
+graph = KAGraph()
+print("Graph created\n")
 
 # Add edges to the graph
 graph.new_edge('A', 'B', 10)
+print("Added edge A-B with cost 10")
 graph.new_edge('B', 'C', 20)
+print("Added edge B-C with cost 20\n")
 
 # Display the graph
+print("Displaying graph")
 graph.view_all()
+print("------------\nGraph displayed\n")
 
 # Query the cost of a path
+print("Querying cost of direct edge A-C\n")
 print(graph.getCost('A', 'C'))
+print("Edge cost queried\n")
 ```
 
 ## Loading Data Into the Graph
@@ -51,10 +59,10 @@ This file indicates there are 3 nodes and 3 edges in the graph. Each of the foll
 Here's how you can read `data.txt` and load its contents into your graph:
 
 ```python
-from KAGraph import Graph
+from KAGraph import KAGraph
 
 # Initialize your graph
-graph = Graph()
+graph = KAGraph()
 
 # Load data from file
 with open("data.txt") as file:
@@ -91,8 +99,10 @@ Now your graph is populated with the data from `data.txt`
 ### Creating and Modifying a Graph
 
 ```python
+from KAGraph import KAGraph
+
 # Initialize a new Graph instance
-graph = Graph()
+graph = KAGraph
 
 # Add multiple edges
 graph.new_edge('X', 'Y', 7)

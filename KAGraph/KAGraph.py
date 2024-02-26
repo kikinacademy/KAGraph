@@ -1,4 +1,4 @@
-class Graph:
+class KAGraph:
     """
     A class to represent a directed weighted graph using adjacency lists.
     Enhanced with additional functionalities for edge removal, node removal, and shortest path finding.
